@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somi Kumari - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about, .portfolio, .contact {
+            margin-bottom: 40px;
+        }
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .portfolio-item {
+            width: calc(33.33% - 20px);
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+        }
+        .contact button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .skills {
+            margin-bottom: 40px;
+        }
+        .skills .skills-chart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .skills-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+            position: relative;
+        }
+        .skills-bar span {
+            display: block;
+            height: 20px;
+            background-color: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Somi Kumari</h1>
+        <p>Full Stack Developer | MERN Stack Expert</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Somi Kumari. I'm a motivated Full Stack Developer with expertise in the MERN stack and a passion for creating scalable and interactive applications. With experience in developing user-friendly web solutions, I aim to deliver high-quality, impactful projects.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-chart">
+                <div>
+                    <p>HTML & CSS</p>
+                    <div class="skills-bar" style="width: 100%;">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div>
+                    <p>JavaScript</p>
+                    <div class="skills-bar" style="width: 100%;">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div>
+                    <p>React</p>
+                    <div class="skills-bar" style="width: 100%;">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div>
+                    <p>Node.js</p>
+                    <div class="skills-bar" style="width: 100%;">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="mediBooker.png" alt="MediBooker Project">
+                    <h3>MediBooker</h3>
+                    <p>An appointment management system developed using the MERN stack. Features include user authentication with JWT, BMI, and fat calculators, and RESTful API integration for efficient data handling.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="memoryMatrixGame.png" alt="Memory Matrix Game">
+                    <h3>Memory Matrix Game</h3>
+                    <p>A responsive memory card game showcasing computing icons, developed with HTML, CSS, and JavaScript. Includes game logic for flipping cards, matching pairs, and celebratory animations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Or reach me at: <a href="mailto:kumarisomi94@gmail.com">kumarisomi94@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/somi-kumari925068199" target="_blank">linkedin.com/in/somi-kumari925068199</a></p>
+            <p>GitHub: <a href="https://github.com/sshyamkr/mediBooker" target="_blank">github.com/sshyamkr/mediBooker</a></p>
+        </section>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Somi Kumari. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
